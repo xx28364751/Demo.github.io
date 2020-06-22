@@ -1,0 +1,353 @@
+@charset "utf-8";
+body {
+    font-size: 13px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.radio {
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.nav {
+    margin-bottom: 5px;
+}
+
+form {
+    margin: 0 0 5px;
+}
+
+.page {
+    text-align: right;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.page a {
+    margin-left: 5px;
+}
+
+.page .current {
+    margin-left: 5px;
+    color: red;
+}
+
+input[type="text"] {
+    height: 28px;
+    width: 220px;;
+}
+
+.table td input[type="checkbox"] {
+    padding: 0;
+    margin: 0;
+}
+
+.table th input[type="checkbox"] {
+    padding: 0;
+    margin: 0;
+}
+
+.table td, .table th {
+    padding-top: 8px;
+    padding-bottom: 4px;
+    line-height: 20px;
+
+}
+
+.table th {
+    font-weight: normal;
+    background-color: #e7f3f7;
+}
+
+.definewidth {
+    width: 96%;
+    margin: auto;
+}
+
+.m10 {
+    margin-top: 10px;
+}
+
+.m20 {
+    padding-top: 20px;
+}
+
+.tableleft {
+    text-align: right;
+    padding-left: 5px;
+    background-color: #f5f5f5;
+    width: 13%;
+
+}
+
+/*formValidator����֤*/
+.onShow, .onFocus, .onError, .onCorrect, .onLoad, .onTime {
+    display: inline-block;
+    display: -moz-inline-stack;
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+    background: url(../images/msg_bg.png) no-repeat;
+    color: #444;
+    line-height: 18px;
+    padding: 2px 10px 2px 23px;
+    margin-left: 10px;
+    _margin-left: 5px
+}
+
+.onShow {
+    background-position: 3px -147px;
+    border-color: #40B3FF;
+    color: #959595
+}
+
+.onFocus {
+    background-position: 3px -147px;
+    border-color: #40B3FF;
+}
+
+.onError {
+    background-position: 3px -47px;
+    border-color: #40B3FF;
+    color: red
+}
+
+.onCorrect {
+    background-position: 3px -247px;
+    border-color: #40B3FF;
+}
+
+.onLamp {
+    background-position: 3px -200px
+}
+
+.onTime {
+    background-position: 3px -1356px
+}
+
+.clearboth {
+    clear: both;
+    height: 1px;
+    margin: 10px auto;
+}
+
+.red {
+    color: red;
+}
+
+.searchTable {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+/* 表格滚动条 */
+.table th,
+.table td {
+    word-break: break-all;
+}
+
+.table-scrollable {
+    border: 1px solid #dddddd;
+    margin: 10px 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.table-scrollable .table {
+    background-color: #fff;
+    margin: 0;
+    width: 100%;
+}
+
+.table-scrollable .table thead tr th, .table-scrollable .table tbody tr th, .table-scrollable .table tbody tr td, .table-scrollable .table tfoot tr th, .table-scrollable .table tfoot tr th, .table-scrollable .table tfoot tr td {
+    white-space: nowrap;
+}
+
+.table-scrollable .table-bordered {
+    border: 0 none;
+}
+
+.table-scrollable .table-bordered thead tr th:first-child, .table-scrollable .table-bordered tbody tr th:first-child, .table-scrollable .table-bordered tfoot tr th:first-child, .table-scrollable .table-bordered thead tr td:first-child, .table-scrollable .table-bordered tbody tr td:first-child, .table-scrollable .table-bordered tfoot tr td:first-child {
+    border-left: 0 none;
+}
+
+.table-scrollable .table-bordered thead tr th:last-child, .table-scrollable .table-bordered tbody tr th:last-child, .table-scrollable .table-bordered tfoot tr th:last-child, .table-scrollable .table-bordered thead tr td:last-child, .table-scrollable .table-bordered tbody tr td:last-child, .table-scrollable .table-bordered tfoot tr td:last-child {
+    border-right: 0 none;
+}
+
+.table-scrollable .table-bordered thead tr:last-child th, .table-scrollable .table-bordered tbody tr:last-child th, .table-scrollable .table-bordered tfoot tr:last-child th, .table-scrollable .table-bordered thead tr:last-child td, .table-scrollable .table-bordered tbody tr:last-child td, .table-scrollable .table-bordered tfoot tr:last-child td {
+    border-bottom: 0 none;
+}
+
+/*表格内容居中不换行*/
+#tableShowList th, #tableShowList td {
+    text-align: center;
+    white-space: nowrap;
+}
+
+#tableShowList {
+    margin-left: 2%; /* 此样式与th/td中的white-space:nowrap;样式共用，若删除必须同时删除，否则影响效果 */
+}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+/* 调整页面文本框不整齐样式开始--gyp:2017.10.14 --------------------------- */
+@media (max-width: 980px) {
+    /* Enable use of floated navbar text */
+    .navbar-text.pull-right {
+        float: none;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+#listPage_table_select {
+    margin: 0 2% 2% 2%; /* 此样式与th/td中的white-space:nowrap;样式共用，若删除必须同时删除，否则影响效果 */
+    width: 99%;
+}
+
+#listPage_table_list {
+    margin-left: 2%; /* 此样式与th/td中的white-space:nowrap;样式共用，若删除必须同时删除，否则影响效果 */
+}
+
+#listPage_table_list tr th, #listPage_table_list tr td {
+    text-align: center;
+    white-space: nowrap; /* 此样式与table中的margin样式共用，若删除必须同时删除，否则影响效果 */
+}
+
+/* 设置日期输入框后按钮的样式(!important优先级别最高) */
+.add-on {
+    padding: 5px 4px !important;
+    height: 30px !important;
+    width: 24px !important;
+
+}
+
+/* 设置文本输入框和下拉框样式(!important优先级别最高) */
+input[type='text'], select {
+    height: 30px !important;
+    width: 220px;
+    margin: 0 0 3px 0 !important;
+}
+
+/* 设置列表页查询部分中的多选文本样式 */
+#listPage_table_select tr td input[type="checkbox"], #listPage_table_select tr td input[type="radio"] {
+    margin-bottom: 5px;
+    margin-right: 2px;
+    height: 30px;
+}
+
+/* table中td边框合并为一个单一的边框 */
+.table-bordered {
+    border-collapse: collapse;
+}
+
+/* 模糊查询中日期选择框宽度--不是模糊查询使用需在class中去掉 */
+.selectDate {
+    width: 85px !important;
+    font-size: 13px !important;
+}
+
+/* 模糊查询中时间选择框宽度--不是模糊查询使用需在class中去掉 */
+.selectDateTime {
+    width: 197px !important;
+    font-size: 13px !important;
+}
+
+/* 模糊查询中开始日期div样式--不是模糊查询使用需在class中去掉 */
+.selectDateDivBegin {
+    display: inline !important;
+}
+
+/* 模糊查询中结束日期div样式--不是模糊查询使用需在class中去掉 */
+.selectDateDivEnd {
+    display: inline !important;
+    margin-left: 1% !important;
+}
+
+/* 导入层高度 */
+.importLayer {
+    max-height: 30% !important;
+    padding-right: 0 !important;
+}
+
+/* 提示层高度 */
+.alertLayer {
+    max-height: 40% !important;
+    padding-right: 0 !important;
+}
+
+/* 导入层文件域样式 */
+.importLayer .modal-body input[type='file'] {
+    display: inline;
+}
+
+/* 列表页：a标签div(新增、导出、导入) */
+.listPage_table_a-div {
+    margin-left: 3% !important;
+}
+
+.listPage_table_a-div a {
+    color: blue;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* 调整页面文本框不整齐样式结束--gyp:2017.10.14 --------------------------- */
+
+/* 只读输入框隐藏光标 */
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+    cursor: default;
+    color: transparent;
+    text-shadow: 0 0 0 #555;
+}
+
+/* 覆盖只读输入框样式 */
+input[disabled]:focus, select[disabled]:focus, textarea[disabled]:focus, input[readonly]:focus, select[readonly]:focus, textarea[readonly]:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+
+.resetTable th, .resetTable td {
+    border-top: none !important;
+    line-height: 30px !important;
+}
+
+.resetTable input[type="radio"], .resetTable input[type="checkbox"] {
+    margin-top: -3px;
+}
+
+.mainTitle {
+    margin: 0 10px;
+}
+
+.mainTitle label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mainTitle input[type="radio"], .mainTitle input[type="checkbox"] {
+    margin-top: -3px;
+}
+
+.mainAction {
+    margin: 10px 10px 0;
+    padding-left: 20px;
+}
+
+.mainAction button {
+    margin-right: 20px;
+    padding: 4px 20px;
+    font-size: 12px;
+}
+
+.mainAction button:last-child {
+    margin-right: 0;
+}
